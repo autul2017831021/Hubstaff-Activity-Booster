@@ -48,7 +48,7 @@ def run_agent(duration_minutes=1, interval_seconds=0.5):
         remaining_seconds = int(end_time - time.time())
         minutes = remaining_seconds // 60
         seconds = remaining_seconds % 60
-        print(f"Remaining Time: {minutes} min {seconds} sec")
+        print(f" {minutes} min {seconds} sec")
 
         # Simulate random mouse movement
         random_mouse_movement()
@@ -56,11 +56,11 @@ def run_agent(duration_minutes=1, interval_seconds=0.5):
         # Simulate random key press
         random_key_press()
 
-        # Wait before next action
+        # Wait before necgibysxt action
         time.sleep(interval_seconds)
-
+ 
 if __name__ == "__main__":
-    minutes = 300
-    interval = 0.1
+    minutes = 120
+    interval = 0.5
     run_agent(minutes, interval)
 
